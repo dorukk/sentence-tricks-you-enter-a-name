@@ -1,0 +1,19 @@
+static void Main(string[] args)
+        {
+
+            Console.Write("Enter your name :");
+            string n = (Console.ReadLine());
+            Console.Write("Enter Number :");
+            int no = Convert.ToInt32(Console.ReadLine());
+
+            cropname(n, no);
+            
+            Console.ReadKey();
+        }
+
+        static void cropname(string name, int number)
+        {
+            Console.Write(name.Substring(0,number));
+            
+            
+        }
