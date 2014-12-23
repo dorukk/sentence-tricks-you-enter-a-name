@@ -1,0 +1,14 @@
+ static void Main(string[] args)
+        {
+            Console.Write("Sentence:...");
+            string sentence = Console.ReadLine();;
+            sentencetrick(sentence);
+
+            Console.ReadKey();
+        }
+
+        static void sentencetrick(string name)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(name.Replace("a", "e"));
+        }
